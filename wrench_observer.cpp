@@ -510,9 +510,7 @@ public:
                              vec_zero;
 
 
-    MCG_dyn = MCG_M * general_vel_dot
-              + MCG_C.cwiseProduct(general_vel)
-              + MCG_G;
+    MCG_dyn = MCG_M * general_vel_dot + MCG_C + MCG_G;
 
 
   }
